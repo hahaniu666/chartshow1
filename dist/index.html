@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="screen-orientation" content="portrait" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="theme-color" content="#000000">
+  <title>Document</title>
+<link href="3.css" rel="stylesheet"></head>
+
+<body style="background: #0b0f34;">
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root"></div>
+
+  <script>
+    
+  </script>
+
+  <!-- <script>
+    $(function () {
+
+      //页面缩放公共
+      var resizePage = function () {
+        // 获取window的高度
+        var clientH = $(window).height();
+        // 初始window与body的比值
+        var bi = clientH / $('body').height();
+        // 设置body的宽高-可根据实际情况进行调节
+        $('body').css({
+          width: 1366,
+          height: 768,
+          overflow: 'hidden',
+          margin: 0
+        });
+        $('body').css('transform', 'scale(' + bi + ')');
+        // body旋转基点设置
+        $('body').css('transform-origin', 'left top 0');
+        // document.documentElement.clientWidth(获取浏览器窗口文档显示区域的宽度，不包括滚动条。)求得body与可视化区域的差值，除以二可得body居中的marginLeft的值
+        var marginLeft = (
+          parseFloat(document.documentElement.clientWidth) -
+          parseFloat($('body').css('width')) * bi
+        ) / 2;
+        // 设置body的marginLeft
+        $('body').css('margin-left', marginLeft + 'px');
+        $('h1').html('现在容器的margin-Left为：' + marginLeft + 'px');
+        // $('html').height(clientH*bi);
+      };
+      resizePage();
+      // resizePage();
+      $(window).resize(resizePage);
+    });
+  </script> -->
+  <!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+<script type="text/javascript" src="commons~app~vendors.9ec8.js"></script><script type="text/javascript" src="vendors~app.9ec8.js"></script><script type="text/javascript" src="app.9ec8.js"></script><script type="text/javascript" src="vendors.9ec8.js"></script></body>
+
+</html>
